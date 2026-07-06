@@ -1,7 +1,6 @@
-//==================================================
+//=====================================================
 // ARAIGEN V0.1
-// Block 2.1
-//==================================================
+//=====================================================
 
 araigen : dialog {
 
@@ -11,76 +10,41 @@ araigen : dialog {
 
         : boxed_column {
 
-            label = "Project Information";
+            label = "Project";
 
-            : row {
-
-                : edit_box {
-                    key = "plot_width";
-                    label = "Plot Width (ft)";
-                    edit_width = 10;
-                    value = "24";
-                }
-
-                : edit_box {
-                    key = "plot_length";
-                    label = "Plot Length (ft)";
-                    edit_width = 10;
-                    value = "45";
-                }
-
+            : edit_box {
+                key="plotw";
+                label="Plot Width";
+                value="24";
+                edit_width=8;
             }
 
-            : row {
-
-                : edit_box {
-                    key = "bedroom";
-                    label = "Bedroom";
-                    edit_width = 5;
-                    value = "3";
-                }
-
-                : edit_box {
-                    key = "bathroom";
-                    label = "Bathroom";
-                    edit_width = 5;
-                    value = "2";
-                }
-
+            : edit_box {
+                key="plotl";
+                label="Plot Length";
+                value="45";
+                edit_width=8;
             }
 
-            : row {
-
-                : edit_box {
-                    key = "kitchen";
-                    label = "Kitchen";
-                    edit_width = 5;
-                    value = "1";
-                }
-
-                : edit_box {
-                    key = "drawing";
-                    label = "Drawing";
-                    edit_width = 5;
-                    value = "1";
-                }
-
+            : edit_box {
+                key="bed";
+                label="Bedrooms";
+                value="3";
+                edit_width=8;
             }
 
-            : row {
+            : edit_box {
+                key="bath";
+                label="Bathrooms";
+                value="2";
+                edit_width=8;
+            }
 
-                : edit_box {
-                    key = "dining";
-                    label = "Dining";
-                    edit_width = 5;
-                    value = "1";
-                }
-
-                : popup_list {
-                    key = "stair";
-                    label = "Stair";
-                }
-
+            : edit_box {
+                key="kitchen";
+                label="Kitchen";
+                value="1";
+                edit_width=8;
             }
 
         }
